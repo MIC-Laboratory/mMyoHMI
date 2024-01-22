@@ -1,8 +1,3 @@
-"""
-    Description: Utilities for extracting and preprocessing sEMG signals data.
-    Author: Jimmy L. @ SF State MIC Lab
-    Date: Summer 2022
-"""
 import matplotlib.pyplot as plt
 import numpy as np
 import json

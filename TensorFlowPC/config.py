@@ -1,8 +1,3 @@
-"""
-    Description: Configuration Variables and Parameters
-    Author: Jimmy L. @ SF State MIC Lab
-    Date: Summer 2022
-"""
 # How many samples each sEMG image channel contains.
 window = 32
 
