@@ -1,8 +1,9 @@
 # mMyoHMI Android App
-This application pairs with the Thalmic Labs Myo Armband or a microcontroller with Bluetooth Low Energy (BLE) capabilities. It connects via BLE to read real-time EMG data. EMG signals undergo time domain feature extraction and are processed using the SMILE Java Machine Learning libraries or TensorFlow Lite for Deep Learning, where feature extraction is optional. The app can predict hand gestures post-training.
 
-The app enables on-device training by loading and fine-tuning a pre-trained convolutional neural network model. While a trained model is included in the app repository, users can create a customized model. To do this, train a deep learning model on a PC using "TensorFlowPC/generate_tflite_model.py" in a Python IDE. This script trains a 2-layer CNN on the NinaPro DB5 Dataset (modifiable). Ensure TensorFlow is installed to generate a "model.tflite" file, and place this in "/app/src/main/assets/model/". Select "CNN" in the app, and start fine-tuning by performing prompted gestures. This adapts the model over the user's sEMG features. The app will display predictions after fine-tuning.
+![System](visuals/System.png?raw=true "System")
+* Figure 1: *mMyoHMI* System: On-device Deep learning and Machine Learning
+Adaption for EMG Pattern Recognitio
 
-The app now also supports connection to BLE-equipped microcontrollers, allowing data sampling from various sensors at different frequencies. Users can specify the number of channels and select which to plot, accommodating diverse sensor setups.
+## About
+mMyoHMI is an mobile Human-Machine Interface (HMI) system designed for real-time interaction using Electromyography (EMG) signals. It leverages the capabilities of the Myo armband, a wearable device that captures EMG signals from the muscles in the forearm. This system uniquely integrates two models: a Deep Learning (DL) model based on Convolutional Neural Networks (CNN) for robust feature extraction and a Machine Learning (ML) model using Linear Discriminant Analysis (LDA) for efficient on-device adaptation. mMyoHMI is tailored to adapt dynamically to biological heterogeneity that exist between different users, enhancing its usability for EMG pattern recognition. The project aims to push the boundaries of EMG-based interfaces, providing a platform for both research and practical implementations in areas like prosthetics, rehabilitation, and interactive systems.
 
-Note: The app comes with a pre-configured CNN model ready for immediate use.
