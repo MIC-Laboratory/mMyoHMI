@@ -9,6 +9,8 @@ mMyoHMI is an mobile Human-Machine Interface (HMI) system designed for real-time
 
 ![GUI](visuals/GUI.png?raw=true "GUI")
 * Figure 2: *mMyoHMI* Android-based Graphical User Interface
+
+## GUI
 1. Connection Tab: To connect a Myo device, users can tap the Myo icon to initiate a scan for Bluetooth Low Energy (BLE) devices. A list of nearby devices will appear for selection. Once a device is selected, the GUI returns to the EMG tab and establishes a connection.
 
 2. Myo Armband Tab: Displays real-time EMG feature visualization after a successful BLE connection is established with the Myo Armband.
