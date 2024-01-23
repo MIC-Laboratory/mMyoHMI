@@ -1,6 +1,6 @@
-# mMyoHMI Android App
+# mMyoHMI: Real-time EMG-based Pattern Recognition with On-device Learning Adaptation
 
-![System](visuals/System.png?raw=true "System")
+![System Architecture](visuals/System.png?raw=true "System")
 * Figure 1: *mMyoHMI* System: On-device Deep learning and Machine Learning
 Adaption for EMG Pattern Recognition.
 
